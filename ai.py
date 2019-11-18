@@ -1,12 +1,12 @@
 from random import randrange
 import util
 
-def tah_pocitace(pole):
-    symbol = 'o' 
+def tah_pocitace(pole, symbol = 'o'):
+   # symbol = 'o' 
  
     if pole.find("o-o") != -1:
         cislo_policka = pole.find("o-o")
-        return util.tah (pole, cislo_policka + 1, symbol)
+        return util.tah (pole, cislo_policka + 1, 'symbol')
 
     elif pole.find("-o-") != -1:
         cislo_policka = pole.find("-o-")
